@@ -1,0 +1,13 @@
+<h1>Bills</h1>
+<ul>
+  {{#each model as |bill|}}
+      <li>
+        {{#link-to 'bill' bill.bill_id}}
+        {{bill.short_title}}
+        {{#if (eq bill.short_title null)}}
+          {{bill.official_title}}
+        {{/if}}
+        {{/link-to}}
+      </li>
+  {{/each}}
+</ul>

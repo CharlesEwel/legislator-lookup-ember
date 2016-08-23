@@ -1,0 +1,8 @@
+<h1>Subcommittees</h1>
+<ul>
+  {{#each model as |subcommittee|}}
+    <li> {{subcommittee.name}} </li>
+  {{else}}
+    Sorry there are no subcommittees for this particular committee
+  {{/each}}
+</ul>
