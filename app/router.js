@@ -11,7 +11,6 @@ Router.map(function() {
   this.route('committee', {path: '/committee/:committee_id'});
   this.route('bills');
   this.route('bill', {path: '/bill/:bill_id'});
-  this.route('upcoming-house-bills');
   this.route('sponsor', {path: 'sponsor/:sponsor_id'});
   this.route('upcoming-bills', {path: 'upcoming-bills/:chamber'});
 });

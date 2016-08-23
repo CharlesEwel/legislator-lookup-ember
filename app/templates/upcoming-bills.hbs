@@ -2,7 +2,7 @@
 <ul>
   {{#each model as |bill|}}
       <li>
-        {{bill.bill_id}}
+        {{bill-display billId=bill.bill_id}}
       </li>
   {{/each}}
 </ul>
