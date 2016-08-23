@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('bill', {path: '/bill/:bill_id'});
   this.route('upcoming-house-bills');
   this.route('sponsor', {path: 'sponsor/:sponsor_id'});
+  this.route('upcoming-bills', {path: 'upcoming-bills/:chamber'});
 });
 
 export default Router;

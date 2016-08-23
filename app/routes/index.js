@@ -11,8 +11,8 @@ export default Ember.Route.extend({
     allBills() {
       this.transitionTo('bills')
     },
-    allHouseBills() {
-      this.transitionTo('upcoming-house-bills')
+    allUpcomingBills(chamber) {
+      this.transitionTo('upcoming-bills', chamber)
     }
   }
 });

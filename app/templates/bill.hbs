@@ -1,6 +1,6 @@
 <h5>Name: {{model.short_title}}</h5>
 <h5>Description: {{model.official_title}}</h5>
-<h5>Sponsor: {{model.sponsor.first_name}} {{model.sponsor.last_name}}</h5>
+<h5>Sponsor: {{#link-to 'sponsor' model.sponsor_id}}{{model.sponsor.first_name}} {{model.sponsor.last_name}}{{/link-to}}</h5>
 {{committee-display committeeId=model.committee_ids}}
 <h5>Date Introduced: {{model.introduced_on}}</h5>
 <h5><a href={{model.last_version.urls.html}}>Link To Latest Version</a></h5>

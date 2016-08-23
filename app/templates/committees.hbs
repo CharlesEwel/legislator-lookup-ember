@@ -4,6 +4,7 @@
   {{#each model as |committee|}}
     {{#if (eq committee.chamber "senate")}}
       <li>
+        {{subcommittee-icon committee}}
         {{#link-to 'committee' committee.committee_id}}
         {{committee.name}}
         {{/link-to}}
@@ -16,6 +17,7 @@
   {{#each model as |committee|}}
     {{#if (eq committee.chamber "house")}}
       <li>
+        {{subcommittee-icon committee}}
         {{#link-to 'committee' committee.committee_id}}
         {{committee.name}}
         {{/link-to}}
@@ -28,6 +30,7 @@
   {{#each model as |committee|}}
     {{#if (eq committee.chamber "joint")}}
       <li>
+        {{subcommittee-icon committee}}
         {{#link-to 'committee' committee.committee_id}}
         {{committee.name}}
         {{/link-to}}
